@@ -41,6 +41,10 @@
             this.ManagerEmailTextBox = new System.Windows.Forms.TextBox();
             this.ManagerEmailLabel = new System.Windows.Forms.Label();
             this.SubmitButton = new System.Windows.Forms.Button();
+            this.ManagerNameTextBox = new System.Windows.Forms.TextBox();
+            this.ManagerNameLabel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // EmployeeEmailLabel
@@ -61,10 +65,10 @@
             // 
             // ApproveButton
             // 
-            this.ApproveButton.Location = new System.Drawing.Point(138, 144);
+            this.ApproveButton.Location = new System.Drawing.Point(138, 169);
             this.ApproveButton.Name = "ApproveButton";
             this.ApproveButton.Size = new System.Drawing.Size(86, 23);
-            this.ApproveButton.TabIndex = 6;
+            this.ApproveButton.TabIndex = 7;
             this.ApproveButton.Text = "Approve";
             this.ApproveButton.UseVisualStyleBackColor = true;
             this.ApproveButton.Click += new System.EventHandler(this.ApproveButtonClicked);
@@ -72,7 +76,7 @@
             // EndDateLabel
             // 
             this.EndDateLabel.AutoSize = true;
-            this.EndDateLabel.Location = new System.Drawing.Point(20, 123);
+            this.EndDateLabel.Location = new System.Drawing.Point(20, 148);
             this.EndDateLabel.Name = "EndDateLabel";
             this.EndDateLabel.Size = new System.Drawing.Size(55, 13);
             this.EndDateLabel.TabIndex = 8;
@@ -81,7 +85,7 @@
             // StartDateLabel
             // 
             this.StartDateLabel.AutoSize = true;
-            this.StartDateLabel.Location = new System.Drawing.Point(20, 97);
+            this.StartDateLabel.Location = new System.Drawing.Point(20, 122);
             this.StartDateLabel.Name = "StartDateLabel";
             this.StartDateLabel.Size = new System.Drawing.Size(58, 13);
             this.StartDateLabel.TabIndex = 7;
@@ -89,24 +93,24 @@
             // 
             // EndDateTimePicker
             // 
-            this.EndDateTimePicker.Location = new System.Drawing.Point(116, 118);
+            this.EndDateTimePicker.Location = new System.Drawing.Point(116, 143);
             this.EndDateTimePicker.Name = "EndDateTimePicker";
             this.EndDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.EndDateTimePicker.TabIndex = 4;
+            this.EndDateTimePicker.TabIndex = 5;
             // 
             // StartDateTimePicker
             // 
-            this.StartDateTimePicker.Location = new System.Drawing.Point(116, 91);
+            this.StartDateTimePicker.Location = new System.Drawing.Point(116, 116);
             this.StartDateTimePicker.Name = "StartDateTimePicker";
             this.StartDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.StartDateTimePicker.TabIndex = 3;
+            this.StartDateTimePicker.TabIndex = 4;
             // 
             // RejectButton
             // 
-            this.RejectButton.Location = new System.Drawing.Point(230, 144);
+            this.RejectButton.Location = new System.Drawing.Point(230, 169);
             this.RejectButton.Name = "RejectButton";
             this.RejectButton.Size = new System.Drawing.Size(86, 23);
-            this.RejectButton.TabIndex = 7;
+            this.RejectButton.TabIndex = 8;
             this.RejectButton.Text = "Reject";
             this.RejectButton.UseVisualStyleBackColor = true;
             this.RejectButton.Click += new System.EventHandler(this.RejectButtonClicked);
@@ -145,23 +149,59 @@
             // 
             // SubmitButton
             // 
-            this.SubmitButton.Location = new System.Drawing.Point(46, 144);
+            this.SubmitButton.Location = new System.Drawing.Point(46, 169);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(86, 23);
-            this.SubmitButton.TabIndex = 5;
+            this.SubmitButton.TabIndex = 6;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitHolidayRequestButtonClicked);
+            // 
+            // ManagerNameTextBox
+            // 
+            this.ManagerNameTextBox.Location = new System.Drawing.Point(116, 64);
+            this.ManagerNameTextBox.Name = "ManagerNameTextBox";
+            this.ManagerNameTextBox.Size = new System.Drawing.Size(200, 20);
+            this.ManagerNameTextBox.TabIndex = 2;
+            // 
+            // ManagerNameLabel
+            // 
+            this.ManagerNameLabel.AutoSize = true;
+            this.ManagerNameLabel.Location = new System.Drawing.Point(20, 67);
+            this.ManagerNameLabel.Name = "ManagerNameLabel";
+            this.ManagerNameLabel.Size = new System.Drawing.Size(83, 13);
+            this.ManagerNameLabel.TabIndex = 11;
+            this.ManagerNameLabel.Text = "Manager Name:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(116, 90);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Manager Email:";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(337, 187);
+            this.ClientSize = new System.Drawing.Size(338, 212);
             this.Controls.Add(this.EmployeeNameLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ManagerNameLabel);
             this.Controls.Add(this.ManagerEmailLabel);
             this.Controls.Add(this.EmployeeEmailLabel);
             this.Controls.Add(this.EmployeeNameTextBox);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ManagerNameTextBox);
             this.Controls.Add(this.ManagerEmailTextBox);
             this.Controls.Add(this.EmployeeEmailTextBox);
             this.Controls.Add(this.RejectButton);
@@ -193,6 +233,10 @@
         private System.Windows.Forms.TextBox ManagerEmailTextBox;
         private System.Windows.Forms.Label ManagerEmailLabel;
         private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.TextBox ManagerNameTextBox;
+        private System.Windows.Forms.Label ManagerNameLabel;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -28,8 +28,8 @@ namespace Holidays.UI
         private HolidayRequest GetRequest()
         {
             return new HolidayRequest(
-                new ContactDetails {Name = EmployeeNameTextBox.Text, EmailAddress = EmployeeEmailTextBox.Text},
-                new ContactDetails {EmailAddress = ManagerEmailTextBox.Text},
+                new ContactDetails(EmployeeNameTextBox.Text, EmployeeEmailTextBox.Text),
+                new ContactDetails(ManagerNameTextBox.Text, ManagerEmailTextBox.Text),
                 StartDateTimePicker.Value,
                 EndDateTimePicker.Value);
         }

@@ -14,7 +14,7 @@ namespace Holidays
         {
             _employee = employee;
             _manager = manager;
-            _hr = new ContactDetails {EmailAddress = "hr@company.com"};
+            _hr = new ContactDetails("Humar Resources", "hr@company.com");
             _from = from;
             _to = to;
         }
