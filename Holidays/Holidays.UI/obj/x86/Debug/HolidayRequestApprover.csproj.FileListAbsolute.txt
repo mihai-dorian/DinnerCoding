@@ -1,0 +1,10 @@
+D:\Holiday\Holiday\HolidayRequestApprover\bin\Debug\HolidayRequestApprover.exe
+D:\Holiday\Holiday\HolidayRequestApprover\bin\Debug\HolidayRequestApprover.pdb
+D:\Holiday\Holiday\HolidayRequestApprover\bin\Debug\Holiday.dll
+D:\Holiday\Holiday\HolidayRequestApprover\bin\Debug\Holiday.pdb
+D:\Holiday\Holiday\HolidayRequestApprover\obj\x86\Debug\HolidayRequestApprover.csprojResolveAssemblyReference.cache
+D:\Holiday\Holiday\HolidayRequestApprover\obj\x86\Debug\HolidayRequestApprover.MainForm.resources
+D:\Holiday\Holiday\HolidayRequestApprover\obj\x86\Debug\HolidayRequestApprover.Properties.Resources.resources
+D:\Holiday\Holiday\HolidayRequestApprover\obj\x86\Debug\HolidayRequestApprover.csproj.GenerateResource.Cache
+D:\Holiday\Holiday\HolidayRequestApprover\obj\x86\Debug\HolidayRequestApprover.exe
+D:\Holiday\Holiday\HolidayRequestApprover\obj\x86\Debug\HolidayRequestApprover.pdb
