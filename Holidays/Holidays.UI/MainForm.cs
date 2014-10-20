@@ -1,13 +1,10 @@
 ﻿using System;
-using System.DirectoryServices.AccountManagement;
 using System.Windows.Forms;
 
 namespace Holidays.UI
 {
     public partial class MainForm : Form
     {
-        private readonly EmailNotifier _notifier = new EmailNotifier();
- 
         public MainForm()
         {
             InitializeComponent();
@@ -15,29 +12,26 @@ namespace Holidays.UI
 
         private void SubmitHolidayRequestButtonClicked(object sender, EventArgs e)
         {
-            _notifier.NotifySubmission(GetRequest());
+            GetRequest().Submit();
         }
 
         private void ApproveButtonClicked(object sender, EventArgs e)
         {
-            _notifier.NotifyApproval(GetRequest());
+            GetRequest().Approve();
         }
 
         private void RejectButtonClicked(object sender, EventArgs e)
         {
-            _notifier.NotifyRejection(GetRequest());
+            GetRequest().Reject();
         }
 
         private HolidayRequest GetRequest()
         {
-            return new HolidayRequest
-                       {
-                           EmployeeName = EmployeeNameTextBox.Text,
-                           EmployeeEmail = EmployeeEmailTextBox.Text,
-                           ManagerEmail = UserPrincipal.Current.EmailAddress,
-                           From = StartDateTimePicker.Value,
-                           To = EndDateTimePicker.Value
-                       };
+            return new HolidayRequest(
+                new ContactDetails {Name = EmployeeNameTextBox.Text, EmailAddress = EmployeeEmailTextBox.Text},
+                new ContactDetails {EmailAddress = ManagerEmailTextBox.Text},
+                StartDateTimePicker.Value,
+                EndDateTimePicker.Value);
         }
     }
 }
