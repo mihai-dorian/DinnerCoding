@@ -57,14 +57,14 @@
             this.EmployeeEmailTextBox.Location = new System.Drawing.Point(116, 38);
             this.EmployeeEmailTextBox.Name = "EmployeeEmailTextBox";
             this.EmployeeEmailTextBox.Size = new System.Drawing.Size(200, 20);
-            this.EmployeeEmailTextBox.TabIndex = 10;
+            this.EmployeeEmailTextBox.TabIndex = 1;
             // 
             // ApproveButton
             // 
             this.ApproveButton.Location = new System.Drawing.Point(138, 144);
             this.ApproveButton.Name = "ApproveButton";
             this.ApproveButton.Size = new System.Drawing.Size(86, 23);
-            this.ApproveButton.TabIndex = 9;
+            this.ApproveButton.TabIndex = 6;
             this.ApproveButton.Text = "Approve";
             this.ApproveButton.UseVisualStyleBackColor = true;
             this.ApproveButton.Click += new System.EventHandler(this.ApproveButtonClicked);
@@ -92,21 +92,21 @@
             this.EndDateTimePicker.Location = new System.Drawing.Point(116, 118);
             this.EndDateTimePicker.Name = "EndDateTimePicker";
             this.EndDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.EndDateTimePicker.TabIndex = 5;
+            this.EndDateTimePicker.TabIndex = 4;
             // 
             // StartDateTimePicker
             // 
             this.StartDateTimePicker.Location = new System.Drawing.Point(116, 91);
             this.StartDateTimePicker.Name = "StartDateTimePicker";
             this.StartDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.StartDateTimePicker.TabIndex = 6;
+            this.StartDateTimePicker.TabIndex = 3;
             // 
             // RejectButton
             // 
             this.RejectButton.Location = new System.Drawing.Point(230, 144);
             this.RejectButton.Name = "RejectButton";
             this.RejectButton.Size = new System.Drawing.Size(86, 23);
-            this.RejectButton.TabIndex = 9;
+            this.RejectButton.TabIndex = 7;
             this.RejectButton.Text = "Reject";
             this.RejectButton.UseVisualStyleBackColor = true;
             this.RejectButton.Click += new System.EventHandler(this.RejectButtonClicked);
@@ -116,7 +116,7 @@
             this.EmployeeNameTextBox.Location = new System.Drawing.Point(116, 12);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
             this.EmployeeNameTextBox.Size = new System.Drawing.Size(200, 20);
-            this.EmployeeNameTextBox.TabIndex = 10;
+            this.EmployeeNameTextBox.TabIndex = 0;
             // 
             // EmployeeNameLabel
             // 
@@ -132,7 +132,7 @@
             this.ManagerEmailTextBox.Location = new System.Drawing.Point(116, 64);
             this.ManagerEmailTextBox.Name = "ManagerEmailTextBox";
             this.ManagerEmailTextBox.Size = new System.Drawing.Size(200, 20);
-            this.ManagerEmailTextBox.TabIndex = 10;
+            this.ManagerEmailTextBox.TabIndex = 2;
             // 
             // ManagerEmailLabel
             // 
@@ -148,7 +148,7 @@
             this.SubmitButton.Location = new System.Drawing.Point(46, 144);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(86, 23);
-            this.SubmitButton.TabIndex = 9;
+            this.SubmitButton.TabIndex = 5;
             this.SubmitButton.Text = "Submit";
             this.SubmitButton.UseVisualStyleBackColor = true;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitHolidayRequestButtonClicked);
