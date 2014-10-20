@@ -7,17 +7,17 @@ namespace Holidays
         private const string AppEmailAddress = "holidays@company.com";
         private const string HrEmailAddress = "hr@company.com";
 
-        public void SendSubmission(HolidayRequest request)
+        public void NotifySubmission(HolidayRequest request)
         {
             SendMail("Holiday Request Submitted", GetBody(request), request.ManagerEmail);
         }
 
-        public void SendApproval(HolidayRequest request)
+        public void NotifyApproval(HolidayRequest request)
         {
             SendMail("Holiday Request Approved", GetBody(request), HrEmailAddress);
         }
 
-        public void SendRejection(HolidayRequest request)
+        public void NotifyRejection(HolidayRequest request)
         {
             SendMail("Holiday Request Rejected", GetBody(request), request.EmployeeEmail);
         }

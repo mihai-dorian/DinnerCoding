@@ -15,17 +15,17 @@ namespace Holidays.UI
 
         private void SubmitHolidayRequestButtonClicked(object sender, EventArgs e)
         {
-            _notifier.SendSubmission(GetRequest());
+            _notifier.NotifySubmission(GetRequest());
         }
 
         private void ApproveButtonClicked(object sender, EventArgs e)
         {
-            _notifier.SendApproval(GetRequest());
+            _notifier.NotifyApproval(GetRequest());
         }
 
         private void RejectButtonClicked(object sender, EventArgs e)
         {
-            _notifier.SendRejection(GetRequest());
+            _notifier.NotifyRejection(GetRequest());
         }
 
         private HolidayRequest GetRequest()
