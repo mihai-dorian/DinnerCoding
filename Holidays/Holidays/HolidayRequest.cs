@@ -19,7 +19,7 @@ namespace Holidays
             _to = to;
         }
 
-        public string AsText()
+        private string AsText()
         {
             return string.Format("Employee: {0}; Period: {1} - {2}", _employee, _from, _to);
         }
