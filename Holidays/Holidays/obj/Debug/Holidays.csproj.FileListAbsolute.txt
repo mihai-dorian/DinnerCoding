@@ -1,8 +1,0 @@
-D:\Holiday\Holiday\Holiday\bin\Debug\Holidays.dll
-D:\Holiday\Holiday\Holiday\bin\Debug\Holidays.pdb
-D:\Holiday\Holiday\Holiday\obj\Debug\Holidays.dll
-D:\Holiday\Holiday\Holiday\obj\Debug\Holidays.pdb
-D:\GitHub\Holidays\Holidays\bin\Debug\Holidays.dll
-D:\GitHub\Holidays\Holidays\bin\Debug\Holidays.pdb
-D:\GitHub\Holidays\Holidays\obj\Debug\Holidays.dll
-D:\GitHub\Holidays\Holidays\obj\Debug\Holidays.pdb

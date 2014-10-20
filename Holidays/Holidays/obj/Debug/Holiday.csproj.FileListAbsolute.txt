@@ -1,4 +1,0 @@
-D:\Holiday\Holiday\Holiday\bin\Debug\Holiday.dll
-D:\Holiday\Holiday\Holiday\bin\Debug\Holiday.pdb
-D:\Holiday\Holiday\Holiday\obj\Debug\Holiday.dll
-D:\Holiday\Holiday\Holiday\obj\Debug\Holiday.pdb
