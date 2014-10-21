@@ -4,44 +4,42 @@ namespace Holidays
 {
     public class HolidayRequest
     {
-        private readonly ContactDetails _employee;
-        private readonly ContactDetails _manager;
-        private readonly ContactDetails _hr;
-        private readonly DateTime _from;
-        private readonly DateTime _to;
+        private readonly string employeeName;
+        private readonly string employeeEmail;
+        private readonly string managerEmail;
+        private readonly DateTime from;
+        private readonly DateTime to;
 
-        public HolidayRequest(ContactDetails employee, ContactDetails manager, DateTime from, DateTime to)
+        public HolidayRequest(string employeeName, string employeeEmail, string managerEmail, DateTime from, DateTime to)
         {
-            _employee = employee;
-            _manager = manager;
-            _hr = new ContactDetails("Humar Resources", "hr@company.com");
-            _from = from;
-            _to = to;
-        }
-
-        private string AsText()
-        {
-            return string.Format("Employee: {0}; Period: {1} - {2}", _employee, _from, _to);
+            this.employeeName = employeeName;
+            this.employeeEmail = employeeEmail;
+            this.managerEmail = managerEmail;
+            this.from = from;
+            this.to = to;
         }
         
-        private void Notify(string status, ContactDetails receiver)
+        private void Notify(string status, string emailAddress)
         {
-            new Notification(status, AsText()).SendTo(receiver);
+            const string sender = "holidays@company.com";
+            string subject = "Holiday Request: " + status;
+            string message = string.Format("Employee: {0} ({1}); Period: {2} - {3}", employeeName, employeeEmail, from, to);
+            new Email(sender, subject, message).SendTo(emailAddress);
         }
 
         public void Submit()
         {
-            Notify("submitted", _manager);
+            Notify("Submitted", managerEmail);
         }
 
         public void Approve()
         {
-            Notify("approved", _hr);
+            Notify("Approved", "hr@company.com");
         }
 
         public void Reject()
         {
-            Notify("rejected", _employee);
+            Notify("Rejected", employeeEmail);
         }
     }
 }
